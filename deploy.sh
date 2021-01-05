@@ -3,28 +3,23 @@
 # If a command fails then the deploy stops
 set -e
 
-printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
-
-# git rm -rf public
-# tail .git/config
-# rm -rf .git/modules/public
-# git submodule add -b master https://github.com/bifani/bifani.github.io.git public
-
-# Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+# Build the project
+echo
+hugo # if using a theme replace with `hugo -t <YOURTHEME>`
 
 # Go To Public folder
 cd public
+echo
+echo "Deploying updates to "`git config --local remote.origin.url`
 
-# Add changes to git.
+# Add changes to git
+echo
 git add .
 
-# # Commit changes.
-# msg="rebuilding site $(date)"
-# if [ -n "$*" ]; then
-# 	msg="$*"
-# fi
-# git commit -m "$msg"
+# Commit changes
+echo
+git commit -m "Rebuilding site $(date)"
 
-# # Push source and build repos.
-# git push origin main
+# Push source and build repos
+echo
+git push origin master
