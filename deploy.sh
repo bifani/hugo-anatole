@@ -5,6 +5,11 @@ set -e
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
+# git rm -rf public
+# tail .git/config
+# rm -rf .git/modules/public
+# git submodule add -b master https://github.com/bifani/bifani.github.io.git public
+
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
