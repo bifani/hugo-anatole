@@ -1,0 +1,4 @@
+[submodule "hugo.github.io/public"]
+	path = hugo.github.io/public
+	url = https://github.com/bifani/bifani.github.io.git
+	branch = master

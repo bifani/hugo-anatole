@@ -1,0 +1,71 @@
+baseURL = "https://bifani.github.io"
+languageCode = "en-us"
+title = "Simone Bifani"
+theme = "anatole"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+
+## General settings
+
+[params]
+title = "Simone Bifani"
+author = "Simone Bifani"
+description = "Data Scientist"
+profilePicture = "images/profile.jpg"
+keywords = ""
+favicon = "favicons/"
+customCss = []
+customJs = []
+mainSections = ["home"]
+images = [""]
+
+
+## Math settings
+
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+
+## Social settings (use 'fab' when brand icons, use 'fas' when standard solid icons)
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/simone-bifani"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/bifani"
+
+[[params.socialIcons]]
+icon = "fab fa-instagram"
+title = "Instagram"
+url = "https://www.instagram.com/tadayuki79"
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/tadayuki79"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:simone.bifani@gmail.com"
+
+## Menu settings
+
+[menu]
+
+#  [[menu.main]]
+#  name = "About Me"
+#  identifier = "about"
+#  url = "/about/"
+
+  [[menu.main]]
+  name = "My Projects"
+  identifier = "projects"
+  url = "/projects/"
